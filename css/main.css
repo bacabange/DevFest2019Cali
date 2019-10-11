@@ -383,6 +383,12 @@ Colors
   background: #4285f4;
   color: #fff;
 }
+.ts-schedule-nav ul li:nth-of-type(2) a.active {
+  background: #34a853;
+}
+.ts-schedule-nav ul li:nth-of-type(3) a.active {
+  background: #fbbc04;
+}
 .ts-schedule-nav ul li a.active h3 {
   color: #fff;
 }
@@ -398,69 +404,64 @@ Colors
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  border-bottom: 1px solid #d5d5d5;
+  padding: 40px 30px 40px 0;
 }
 .schedule-listing .schedule-slot-time {
-  background: #d20055;
-  color: #fff;
-  padding: 60px 28px;
+  color: #333;
   font-size: 18px;
   font-weight: 700;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 18%;
   flex: 0 0 18%;
-  max-width: 18%;
+  display: flex;
+  align-items: center;
 }
 .schedule-listing .schedule-slot-time span {
   display: block;
   line-height: 26px;
+  margin: auto;
 }
 .schedule-listing .schedule-slot-info {
-  position: relative;
-  padding: 35px 40px 35px 170px;
-  border: 1px dashed #e5e5e5;
-  border-left: none;
+  display: flex;
+  flex-direction: row;
   width: 100%;
+  align-items: center;
 }
 .schedule-listing .schedule-slot-info .schedule-slot-speakers {
-  position: absolute;
-  left: 40px;
-  top: 0;
+  border-radius: 50%;
   height: 80px;
   width: 80px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  bottom: 0;
-  margin: auto;
+  margin-right: 20px;
 }
 .schedule-listing .schedule-slot-info .schedule-slot-title {
   font-size: 24px;
 }
 .schedule-listing .schedule-slot-info .schedule-slot-title strong {
   font-size: 14px;
-  color: #888888;
+  color: #ababab;
   margin-top: 15px;
   display: block;
 }
 .schedule-listing .schedule-slot-info p {
   margin-bottom: 0;
 }
-.schedule-listing:hover .schedule-slot-title {
-  color: #ea4335;
-}
-.schedule-listing:nth-of-type(even) .schedule-slot-time {
-  background: #e7015e;
-}
-.schedule-listing.launce .schedule-slot-time {
-  padding: 40px 28px;
+.schedule-listing:hover {
+  background: #f9f9f9;
 }
 .schedule-listing.launce .schedule-slot-title {
-  float: left;
   margin-bottom: 0;
 }
-.schedule-listing.launce .schedule-slot-info-content img {
-  float: right;
+.schedule-listing.launce .schedule-slot-info-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+/* .schedule-listing.launce .schedule-slot-info-content img {
+  float: right;
+} */
 
 .schedule-listing-btn {
   text-align: center;
