@@ -71,7 +71,7 @@ Colors
 /* Hero area */
 .hero-area.centerd-item .banner-item {
   min-height: 770px;
-  padding: 30px 0;
+  padding: 0;
 }
 .hero-area.centerd-item .banner-item:before {
   background: url(../images/hero_area/banner_slices2.png) no-repeat center center;
@@ -339,4 +339,130 @@ Colors
 }
 .ts-speaker .speaker-img-yellow::before {
   background-image: url('../images/overlays/circle-yellow.png');
+}
+
+.ts-speaker:hover .ts-title a {
+  color: #4285f4;
+}
+
+/* Schedule */
+
+.ts-schedule-nav {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.ts-schedule-nav ul {
+  border: none;
+}
+.ts-schedule-nav ul li {
+  margin: 0 3px;
+}
+.ts-schedule-nav ul li a {
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  background: #f1f0f6;
+  display: block;
+  padding: 20px 50px;
+  position: relative;
+}
+.ts-schedule-nav ul li:nth-of-type(1) a {
+  border-radius: 30px 0 0 0;
+}
+.ts-schedule-nav ul li:nth-of-type(3) a {
+  border-radius: 0 0 30px 0;
+}
+.ts-schedule-nav ul li a h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #222222;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+.ts-schedule-nav ul li a.active {
+  background: #4285f4;
+  color: #fff;
+}
+.ts-schedule-nav ul li a.active h3 {
+  color: #fff;
+}
+.ts-schedule-nav ul li a.active:before {
+  opacity: 1;
+}
+
+.schedule-listing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.schedule-listing .schedule-slot-time {
+  background: #d20055;
+  color: #fff;
+  padding: 60px 28px;
+  font-size: 18px;
+  font-weight: 700;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 18%;
+  flex: 0 0 18%;
+  max-width: 18%;
+}
+.schedule-listing .schedule-slot-time span {
+  display: block;
+  line-height: 26px;
+}
+.schedule-listing .schedule-slot-info {
+  position: relative;
+  padding: 35px 40px 35px 170px;
+  border: 1px dashed #e5e5e5;
+  border-left: none;
+  width: 100%;
+}
+.schedule-listing .schedule-slot-info .schedule-slot-speakers {
+  position: absolute;
+  left: 40px;
+  top: 0;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  bottom: 0;
+  margin: auto;
+}
+.schedule-listing .schedule-slot-info .schedule-slot-title {
+  font-size: 24px;
+}
+.schedule-listing .schedule-slot-info .schedule-slot-title strong {
+  font-size: 14px;
+  color: #888888;
+  margin-top: 15px;
+  display: block;
+}
+.schedule-listing .schedule-slot-info p {
+  margin-bottom: 0;
+}
+.schedule-listing:hover .schedule-slot-title {
+  color: #ea4335;
+}
+.schedule-listing:nth-of-type(even) .schedule-slot-time {
+  background: #e7015e;
+}
+.schedule-listing.launce .schedule-slot-time {
+  padding: 40px 28px;
+}
+.schedule-listing.launce .schedule-slot-title {
+  float: left;
+  margin-bottom: 0;
+}
+.schedule-listing.launce .schedule-slot-info-content img {
+  float: right;
+}
+
+.schedule-listing-btn {
+  text-align: center;
+  margin-top: 60px;
 }
