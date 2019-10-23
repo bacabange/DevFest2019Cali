@@ -573,3 +573,39 @@ Colors
   background: #000;
   padding: 250px 0 50px;
 }
+
+.speaker-classic {
+  padding-top: 100px;
+}
+.speaker-classic .ts-speaker {
+  /* margin-bottom: 60px; */
+}
+.speaker-classic .ts-speaker .speaker-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  margin: 0;
+}
+.speaker-classic .ts-speaker .ts-speaker-info {
+  position: relative;
+  background: #34a853;
+  z-index: 1;
+  width: 100%;
+  padding: 10px 0 10px;
+}
+.speaker-classic .ts-speaker .ts-speaker-info .ts-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #fff;
+}
+.speaker-classic .ts-speaker .ts-speaker-info p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #ebebeb;
+}
+.speaker-classic .ts-speaker .ts-speaker-info .ts-speakers-social > a {
+  color: #ebebeb !important;
+  margin-left: 5px;
+}
